@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock <span>Paper</span> Scissors</h1>
+        <div class="scoreboard">
+            <div class="score">Wins: <span id="wins">0</span></div>
+            <div class="score">Losses: <span id="losses">0</span></div>
+            <div class="score">Ties: <span id="ties">0</span></div>
+        </div>
+        <div class="choices">
+            <div class="choice" data-choice="rock">
+                <img src="icons/rock.png" alt="Rock">
+            </div>
+            <div class="choice" data-choice="paper">
+                <img src="icons/paper.png" alt="Paper">
+            </div>
+            <div class="choice" data-choice="scissors">
+                <img src="icons/scissors.jpg" alt="Scissors">
+            </div>
+        </div>
+        <div class="result">
+            <p class="message">Choose your move!</p>
+            <div class="user-ai-display">
+                <div class="user-choice-display">
+                    <p>Your Choice:</p>
+                    <img id="user-choice-img" src=" " alt="Your choice" class="result-choice">
+                </div>
+                <div class="ai-choice-display">
+                    <p>AI Choice:</p>
+                    <img id="ai-choice-img" src=" " alt="AI choice" class="result-choice">
+                </div>
+            </div>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
+
